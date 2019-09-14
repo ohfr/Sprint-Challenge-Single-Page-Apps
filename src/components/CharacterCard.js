@@ -8,7 +8,8 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
   card: {
-    maxWidth: 345,
+    width: 345,
+    margin: '20px'
   },
   media: {
     height: 250,
@@ -38,7 +39,7 @@ export default function CharacterCard(props) {
           <Typography variant="body2" color="textSecondary" component="p">
           {props.species} {props.status} 
           </Typography>
-          <p>Location: {props.location} </p>
+          <p>Location: {props.loc} </p>
           <p>Origin: {props.origin} </p>
         </CardContent>
       </CardActionArea>

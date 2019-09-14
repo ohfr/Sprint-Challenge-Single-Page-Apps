@@ -1,10 +1,12 @@
 import React from "react";
 import TabNav from "./components/TabNav.js";
 import Header from "./components/Header.js";
-import { Tab } from "semantic-ui-react";
 import { Route } from 'react-router-dom';
 import WelcomePage from './components/WelcomePage';
 import CharacterList from "./components/CharacterList.js";
+import LocationsList from "./components/LocationsList.js";
+import EpisodeList from './components/EpisodeList';
+
 
 
 export default function App() {
@@ -14,6 +16,8 @@ export default function App() {
       <TabNav />
       <Route exact path="/" component={WelcomePage} />
       <Route path="/characters" render={props => <CharacterList {...props} />} />
+      <Route path="/locations" component={LocationsList} />
+      <Route path="/episodes" component={EpisodeList} />
     </main>
   );
 }
