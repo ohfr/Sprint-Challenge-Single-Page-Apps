@@ -25,7 +25,7 @@ export default function EpisodeList() {
             setEpisode(res.data.results)
         })
         .catch(err => console.log(err))
-    })
+    }, [])
     return (
         <div className={classes.wrapper}>
             {episode.map((ep, index) => {
