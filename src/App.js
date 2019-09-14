@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import TabNav from "./components/TabNav.js";
 import Header from "./components/Header.js";
 import { Route } from 'react-router-dom';
@@ -6,6 +6,7 @@ import WelcomePage from './components/WelcomePage';
 import CharacterList from "./components/CharacterList.js";
 import LocationsList from "./components/LocationsList.js";
 import EpisodeList from './components/EpisodeList';
+import axios from 'axios';
 
 
 
